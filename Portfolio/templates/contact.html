@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Karthik S</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Contact Me</h1>
+        <p>Have a project, opportunity, or collaboration in mind? Let’s connect!</p>
+    </header>
+
+    <section id="contact-form">
+        <form method="POST" action="/contact">
+            <label for="name">Your Name:</label><br>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+
+            <label for="email">Your Email:</label><br>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+
+            <label for="message">Your Message:</label><br>
+            <textarea id="message" name="message" rows="5" cols="40" placeholder="Write your message here..." required></textarea><br><br>
+
+            <input type="submit" value="Send Message">
+        </form>
+    </section>
+
+    <section id="contact-info">
+        <h2>Other Ways to Reach Me</h2>
+        <p><strong>Email:</strong> <a href="mailto:karthik.sivakumar004@gmail.com">karthik.sivakumar004@gmail.com</a></p>
+        <p><strong>LinkedIn:</strong> 
+            <a href="https://www.linkedin.com/in/karthik-s-772930248/" target="_blank">
+                linkedin.com/in/karthik-s-772930248
+            </a>
+        </p>
+        <p><strong>Location:</strong> Chennai, India</p>
+    </section>
+
+    <nav>
+        <a href="/">Home</a> |
+        <a href="/about">About</a> |
+        <a href="/projects">Projects</a>
+    </nav>
+
+    <footer>
+        <p>© 2025 Karthik S | Python Developer | Built with Flask</p>
+    </footer>
+</body>
+</html>
